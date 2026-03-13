@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 8px;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        padding: 3%;
+      }
+      main{
+        height: 100%;
+        width:100% ;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 15% 30%;
+        grid-template-rows: 10% 5% 25% 25% 25%;
+        align-content: center;
+      }
+      #cloud{
+        grid-row-start:3; grid-row-end:4; grid-column-start:1; grid-column-end:2
+      }
+      #cube{
+        grid-row-start:4; grid-column-end:2; 
+      }
+      .title{
+        grid-column-start: 1; grid-column-end: 3;
+        align-content: center; text-align: center;
+        font-family: sans-serif;
+      }
+      #line{
+        grid-column-start: 1; grid-column-end:3;
+        width: 100%;
+      }
+      #article1{
+        grid-row-start: 3; grid-row-end:4 ;
+      }
+      .articles{ 
+        font-weight: bolder;
+        font-family: sans-serif;
+        grid-column-start:2; grid-column-end:3;
+      }
+      .article-date{
+        font-weight: lighter;
+        font-family: sans-serif;
+        color: rgb(171, 169, 169);
+        font-size: smaller;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="title"><h1>We release interesting articles about technology</h1> 
+      </div>
+      <img id="line" src="./resources/Seperator.svg" height="12px" width="20px" alt="seperator">
+    
+      <img id="cloud" src="./resources/photo_1.png" alt="an image of stairs going up in the clouds"><div class="articles" id="article1">Unlocking the Power of Cloud Computing :
+    
+      A Guide to Scalable Solutions
+      </p>
+      <span class="article-date"> November 12, 2024</span>  </div>
+    
+      <img id="cube" src="./resources/photo_2.png" alt="an ice cube with sharp borders and pink light passing through in a blue background"><div class="articles" id="article2">The Future of AI :
+    
+      How Machine Learning is Revolutionizing Industries 
+      </p> <span class="article-date"> November 12, 2024 </span> </div>
+    
+      <img src="./resources/photo_3.png" alt="image">
+      <div class="articles" id="article3"> Impact of 5G on Business :
+    
+      How Faster Networks are Transforming the Way We Work
+      </p> <span class="article-date">November 12, 2024 </span> </div>
+    
+    </main>
+    <footer> <div class="author-info">
+      Coded by <a href="#">Pamela Mukashema</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div> </footer>
+    
+  </body>
+</html>
